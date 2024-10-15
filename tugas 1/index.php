@@ -38,7 +38,7 @@ class Animal {
 }
 
 
-$animal = new Animal(['Kucing', 'Anjing', 'Kelinci']);
+$animal = new Animal(['kambing', 'sapi', 'domba']);
 
 
 echo 'Index - Menampilkan seluruh hewan<br>';
@@ -46,20 +46,20 @@ $animal->index();
 echo '<br><br>';
 
 
-echo 'Store - Menambahkan hewan baru (Burung)<br>';
-$animal->store('Burung');
+echo 'Store - Menambahkan hewan baru (kambing)<br>';
+$animal->store('kambing');
 $animal->index();
 echo '<br><br>';
 
 
 echo 'Update - Mengupdate nama hewan<br>';
-$animal->update('Kucing', 'Kucing Anggora');
+$animal->update('sapi', 'kerbau');
 $animal->index();
 echo '<br><br>';
 
 
-echo 'Destroy - Menghapus hewan (Anjing)<br>';
-$animal->destroy('Anjing');
+echo 'Destroy - Menghapus hewan (domba)<br>';
+$animal->destroy('domba');
 $animal->index();
 echo '<br><br>';
 ?>
